@@ -2187,7 +2187,7 @@ with tab6:
 
                 # 显示技术对比图表
                 tech_fig = vis.create_technology_comparison(comparison_results)
-                st.plotly_chart(tech_fig)
+                st.plotly_chart(tech_fig, key="carbon")
 
                 # 显示详细对比表格
                 st.subheader("技术经济性分析")
@@ -2213,7 +2213,7 @@ with tab6:
                 'tech_comparison_results') and st.session_state.tech_comparison_results is not None:
         st.subheader("历史对比结果")
         tech_fig = vis.create_technology_comparison(st.session_state.tech_comparison_results)
-        st.plotly_chart(tech_fig)
+        st.plotly_chart(tech_fig, key="carbon-b")
 
         # 技术详情表格
         st.subheader("减排技术详情")
