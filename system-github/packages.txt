@@ -1,9 +1,0 @@
-# Streamlit Cloud 系统依赖
-build-essential
-python3-dev
-libatlas-base-dev
-libglib2.0-0
-libsm6
-libxext6
-libxrender-dev
-libgomp1
